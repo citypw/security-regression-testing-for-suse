@@ -1,0 +1,3 @@
+timer 200
+fg 1 security qa_test_security/sec.sh
+wait

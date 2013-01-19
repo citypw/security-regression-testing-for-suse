@@ -1,0 +1,17 @@
+Shawn the R0ck, Dec 3 2012
+
+This is detail report for database exploit regression testing.
+
+mysql_heapoverrun.pl
+-------------------------------------------------------------------------
+Dec 3 2012
+
+CVE-2012-5611, bug-id: 792362
+
+It did affected the current mysql version that allows an authenticated
+user to execute arbitrary code in mysqld.
+
+Full-disclosure made this POC exp public:
+http://seclists.org/fulldisclosure/2012/Dec/4
+
+-------------------------------------------------------------------------

@@ -1,0 +1,9 @@
+Shawn the R0ck, Oct 2 2012
+
+This is detail report for some exploit regression testing.
+
+18754-libreoffice-3.4.2.php
+-------------------------------------------------------------------------
+18754(libreoffice crash, fixed in 3.5.4 and 3.6), SLED 11 SP2 is using
+LibreOffice 3.4.2, so it won't affect it.
+-------------------------------------------------------------------------

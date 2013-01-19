@@ -1,0 +1,18 @@
+Shawn the R0ck, Oct 2 2012
+
+This is detail report for social engineering attack regression
+testing.
+
+19523-python-untrust-search-path.txt
+-------------------------------------------------------------------------
+19523(python untrust search path), This one is a very intersting
+social engineering attack and it does work in python 2 and python 3
+environment.
+ 
+I could'nt find the CVE yet. When a python program is trying to invoke
+help("modules"), python will traverse the whole python modules which
+was in /usr/xxx. Meantime, python will try to find the same module
+name in the current directory. So, this is not a really software
+exploit. But only a trick that attack might have the chance to do the
+social engineering attack-_-
+-------------------------------------------------------------------------

@@ -1,4 +1,32 @@
-security-regression-testing-for-suse
-====================================
-
 Security regression testing for SUSE GNU/Linux
+
+├── automation_testing
+│   └── qa_test_security
+├── other
+│   └── vm-sec-assessment.log
+├── pentest
+│   └── http_response_format.txt
+├── README
+├── sle11-sp2
+│   ├── dos	// Denial of Service
+│   ├── java	// java stuff
+│   ├── kernel	// GNU/Linux kernel attack
+│   ├── lib	// Library related
+│   ├── other	// libreoffice, etc
+│   ├── README
+│   ├── samba
+│   └── se-attack // Social engineering attack
+└── virus-trojan  // virus and trojan
+    ├── README
+    └── wirenet.1-9a0e765eecc5433af3dc726206ecc56e.zip
+
+Why this project?  
+
+There are a plenty of exploits have been disclosuring very year. We
+need a repo to record what exploits we have done the test. This
+project is trying to make SuSE new release secure and ensuring that
+the previous exploits won't affect it
+
+
+Shawn the R0ck
+Oct 2 2012

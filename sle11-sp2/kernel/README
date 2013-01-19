@@ -1,0 +1,73 @@
+Shawn the R0ck, Oct 2 2012
+
+This is detail report for kernel exploit regression testing.
+
+kernstack_disclosure_binfmt_script.sh
+-------------------------------------------------------------------------
+Oct 20 2012
+
+CVE-2012-4530, bug-id: 786013
+
+Visit the bugzilla if you want more details.
+-------------------------------------------------------------------------
+
+uname26-kernel-info-leak.c
+-------------------------------------------------------------------------
+Oct 11 2012
+
+CVE-2012-0957, bug-id: 783515
+
+It did affect the SLES 11 SP2 with kernel 3.0.38-0.5. The upstream
+fix: 
+https://lkml.org/lkml/2012/10/9/550
+-------------------------------------------------------------------------
+
+nvidia-driver-root-pri.c:
+-------------------------------------------------------------------------
+Aug 3rd, 2012
+A anonymously hacker disclosure an exploit[1] of nvidia private driver
+for GNU/Linux version:
+http://permalink.gmane.org/gmane.comp.security.full-disclosure/86747
+
+According to the report, it should be get root as a local exploit. I
+tested the exploit( which was attached) on SLED 11 SP2 with nvidia
+private drvier 295.58. The result won't leads to get the root privilege
+but it crashed the OS. This exploit doesn't work on nouveau( an open
+source driver which was made by the procedure of reverse engineering of
+Nvidia private driver)-_-
+
+Marcus:"Thats also one reason why we push to keep /dev/nvidia not
+writeable by users. (It is however due to the "video" group.)"
+-------------------------------------------------------------------------
+
+18411-write-mem-root-pri.c
+-------------------------------------------------------------------------
+SLE 11 SP2 with kernel 3.0.38 used upstream fix now.
+
+Aug 21st, 2012
+
+GNU/Linux local root exploit, firstly I recompiled a kernel 2.6.39
+slackware and it was work. A kernel commit caused this security bug
+last March:
+
+http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=198214a7 , 
+
+until the Jan 2012 the kernel mainline fixed the bug:
+
+http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=e268337dfe26dfc7efd422a804dbb27977a3cccc
+
+I tested the exploit on SLED 11 SP2 and it doesn't work. Then I looked
+through the kernel/fs/proc/base.c that it seems SUSE kernel's fix is
+not come from the upstream fix though. According to the ChangeLog of
+upstream fix, this bug was fixed in kernel-3.0.18(commit:
+e268337dfe26dfc7efd422a804dbb27977a3cccc):
+
+http://www.kernel.org/pub/linux/kernel/v3.0/ChangeLog-3.0.18
+
+Here's paper to explain how the bug leads to a exploit:
+blog.zx2c4.com/749
+
+And, the correct exploit code right here:
+
+http://git.zx2c4.com/CVE-2012-0056/tree/mempodipper.c 
+-------------------------------------------------------------------------

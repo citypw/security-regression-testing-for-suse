@@ -1,0 +1,14 @@
+Shawn the R0ck, Oct 9 2012
+
+This is detail report for library exploit regression testing.
+
+21323-dbus_local_pri_esc.c
+-------------------------------------------------------------------------
+Oct 8, 2012
+
+CVE-2012-3524: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3524
+
+Finally, Sebastian Krahmer wrote this POC code. It works on SLE11 SP2
+GM with SuSE kernel 3.0.13-0.27. And it won't affect the latest update
+of SLE11 SP2 with SuSE kernel 3.0.38-0.5.
+-------------------------------------------------------------------------

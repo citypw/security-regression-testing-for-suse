@@ -1,0 +1,1 @@
+perl -pi -e 's|xXx|XxX|g' `find ./ -type f`

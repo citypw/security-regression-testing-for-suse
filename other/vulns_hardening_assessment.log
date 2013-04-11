@@ -1,0 +1,68 @@
+Compiler and Linker:
+
++--------------------------------------------------------------------+-----------------------------------------+
+|   Technology                                                       |          Enable/Disable/Status          |
++--------------------------------------------------------------------+-----------------------------------------+
+| Stack canary, -fstack-protector*                                   |  YES, for critical packages only        |
++--------------------------------------------------------------------+-----------------------------------------+
+| Heap( malloc() corruption check), default since glibc 2.5          |  YES                                    |
++--------------------------------------------------------------------+-----------------------------------------+
+| Fortify Source extenion in gcc/glibc enable for all                |  YES                                    |
++--------------------------------------------------------------------+-----------------------------------------+
+| pointer encryption, glibc upstream, as PTR_MANGLE                  |  ?                                      |
++--------------------------------------------------------------------+-----------------------------------------+
+| All binaries built as PIE can take advantage of ASLR               |  YES                                    |
++--------------------------------------------------------------------+-----------------------------------------+
+| GOT memory corruption attack hardening of ELF binaries, -z relro   |  YES, a few packages                    |
++--------------------------------------------------------------------+-----------------------------------------+
+| Marking stack and heap non-executable to make NX possible          |  YES                                    |
++--------------------------------------------------------------------+-----------------------------------------+
+
+Kernel
++----------------------------------------------------------------------+-----------------------------------------+
+| SELinux                                                              | YES, but not the default                |
++----------------------------------------------------------------------+-----------------------------------------+
+| AppArmor                                                             | YES, default                            |
++----------------------------------------------------------------------+-----------------------------------------+
+| Grsecurity/PaX                                                       | NO, not in upstream mainline code       |
++----------------------------------------------------------------------+-----------------------------------------+
+| seccomp                                                              | YES, since 2.6.12                       |
++----------------------------------------------------------------------+-----------------------------------------+
+| ASLR, Address space randomization for the stack/lib mappings         | YES, 1/2                                |
++----------------------------------------------------------------------+-----------------------------------------+
+| CONFIG_CC_STACKPROTECTOR, to enable stack canary in kernel space     | NO, RISK: panic if attack occurs        |
++----------------------------------------------------------------------+-----------------------------------------+
+
+1. http://en.opensuse.org/openSUSE:Security_Features
+2. https://wiki.ubuntu.com/Security/Features
+3. http://wiki.debian.org/Hardening/#State_of_implementation
+
+
+VM sec assessment:
+Source: http://www.atsec.com/downloads/white-papers/kvm_security_comparison.pdf
+
++-------------------------------------------------------------------------------------------------------+
+| Scenarios                                                   KVM         Xen       VMWare ESX Server*  |
++-------------------------------------------------------------------------------------------------------+
+| Assurance of protection against VM accessing unassigned                                               |
+| resources mediated by para-virtualized drivers             Medium       Low             N/A           |
++-------------------------------------------------------------------------------------------------------+
+| Assurance of protection against VM accessing unassigned              Stubdom:Medium                   |
+| resources mediated by full virtualization support software Medium    default:low        Low           |
++-------------------------------------------------------------------------------------------------------+
+| Assurance of protection against subversion of trusted                                                 |
+| VMM software – subversion of Hyperviso                     High          High           Medium        |
++-------------------------------------------------------------------------------------------------------+
+| Assurance of protection against Subversion of trusted                 Stubdom:Medium                  |
+| VMM software – subversion of other virtual machines        Medium     default:low       N/A           |
++-------------------------------------------------------------------------------------------------------+
+| Assurance of protection against Subversion of trusted                  Stubdom:Medium                 |
+| VMM software – subversion of boot process                  High        default:low      N/A           |
++-------------------------------------------------------------------------------------------------------+
+| Assurance of protection against one VM causing a DoS of                                               |
+| other VMs                                                  High          Medium         Medium        |
++-------------------------------------------------------------------------------------------------------+
+| Support for sandboxing usage                               High          Medium         Low           |
++-------------------------------------------------------------------------------------------------------+
+| VMs belong to different security domains                   Low           Medium         Low           |
++-------------------------------------------------------------------------------------------------------+
